@@ -292,6 +292,16 @@ namespace LojaCarros
 				rdbA3.Checked = false;
 				gpbModel.Enabled = false;
 			}
+			lblParJur.Visible = false;
+			lblJuros.Visible = false;
+			lblVistaDesc.Visible = false;
+			lblValTotal.Visible = false;
+
+			lblVPJ.Text = "";
+			lblValJur.Text = "";
+			lblVtotal.Text = "";
+			cbbForPag.Text = "Escolha...";
+			cbbParcela.Text = "Escolha as parcelas";
 		}
 
 		private void btnAlt_Click(object sender, EventArgs e)
@@ -300,7 +310,19 @@ namespace LojaCarros
 			gpbPag.Enabled = false;
 			rdbVista.Checked = false;
 			rdbFin.Checked = false;
+
+			lblParJur.Visible = false;
+			lblJuros.Visible = false;
+			lblVistaDesc.Visible = false;
+			lblValTotal.Visible = false;
+
 			lblVPJ.Text = "";
+			lblValJur.Text = "";
+			lblVtotal.Text = "";
+			cbbForPag.Text = "Escolha...";
+			cbbParcela.Text = "Escolha as parcelas";
+
+
 		}
 
 		private void cbbForPag_SelectedIndexChanged(object sender, EventArgs e)
@@ -326,6 +348,9 @@ namespace LojaCarros
 			double a3UsedTur = 38000;
 			double a3Used = 22000;
 
+			lblVistaDesc.Visible = true;
+			lblValTotal.Visible = true;
+
 			int opc = cbbForPag.SelectedIndex;
 			switch (opc)
 			{
@@ -336,9 +361,8 @@ namespace LojaCarros
 						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
 						valDesc = total * 0.12;
 						total -= valDesc;
-						lblVistaDesc.Visible = true;
+						
 						lblValJur.Text = valDesc.ToString("C");
-						lblValTotal.Visible = true;
 						lblVtotal.Text = total.ToString("C");
 
 					}
@@ -349,9 +373,8 @@ namespace LojaCarros
 						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
 						valDesc = total * 0.12;
 						total -= valDesc;
-						lblVistaDesc.Visible = true;
+
 						lblValJur.Text = valDesc.ToString("C");
-						lblValTotal.Visible = true;
 						lblVtotal.Text = total.ToString("C");
 					}
 					if (rdbG3.Checked)
@@ -360,9 +383,7 @@ namespace LojaCarros
 						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
 						valDesc = total * 0.12;
 						total -= valDesc;
-						lblVistaDesc.Visible = true;
 						lblValJur.Text = valDesc.ToString("C");
-						lblValTotal.Visible = true;
 						lblVtotal.Text = total.ToString("C");
 					}
 
@@ -372,9 +393,7 @@ namespace LojaCarros
 						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
 						valDesc = total * 0.12;
 						total -= valDesc;
-						lblVistaDesc.Visible = true;
 						lblValJur.Text = valDesc.ToString("C");
-						lblValTotal.Visible = true;
 						lblVtotal.Text = total.ToString("C");
 					}
 					break;
@@ -386,9 +405,7 @@ namespace LojaCarros
 						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
 						valDesc = total * 0.12;
 						total -= valDesc;
-						lblVistaDesc.Visible = true;
 						lblValJur.Text = valDesc.ToString("C");
-						lblValTotal.Visible = true;
 						lblVtotal.Text = total.ToString("C");
 					}
 
@@ -398,9 +415,7 @@ namespace LojaCarros
 						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
 						valDesc = total * 0.12;
 						total -= valDesc;
-						lblVistaDesc.Visible = true;
 						lblValJur.Text = valDesc.ToString("C");
-						lblValTotal.Visible = true;
 						lblVtotal.Text = total.ToString("C");
 					}
 
@@ -410,9 +425,7 @@ namespace LojaCarros
 						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
 						valDesc = total * 0.12;
 						total -= valDesc;
-						lblVistaDesc.Visible = true;
 						lblValJur.Text = valDesc.ToString("C");
-						lblValTotal.Visible = true;
 						lblVtotal.Text = total.ToString("C");
 					}
 
@@ -422,9 +435,7 @@ namespace LojaCarros
 						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
 						valDesc = total * 0.12;
 						total -= valDesc;
-						lblVistaDesc.Visible = true;
 						lblValJur.Text = valDesc.ToString("C");
-						lblValTotal.Visible = true;
 						lblVtotal.Text = total.ToString("C");
 					}
 					break;
@@ -436,9 +447,7 @@ namespace LojaCarros
 						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
 						valDesc = total * 0.15;
 						total -= valDesc;
-						lblVistaDesc.Visible = true;
 						lblValJur.Text = valDesc.ToString("C");
-						lblValTotal.Visible = true;
 						lblVtotal.Text = total.ToString("C");
 					}
 
@@ -448,9 +457,7 @@ namespace LojaCarros
 						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
 						valDesc = total * 0.15;
 						total -= valDesc;
-						lblVistaDesc.Visible = true;
 						lblValJur.Text = valDesc.ToString("C");
-						lblValTotal.Visible = true;
 						lblVtotal.Text = total.ToString("C");
 					}
 
@@ -460,9 +467,7 @@ namespace LojaCarros
 						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
 						valDesc = total * 0.15;
 						total -= valDesc;
-						lblVistaDesc.Visible = true;
 						lblValJur.Text = valDesc.ToString("C");
-						lblValTotal.Visible = true;
 						lblVtotal.Text = total.ToString("C");
 					}
 
@@ -472,9 +477,7 @@ namespace LojaCarros
 						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
 						valDesc = total * 0.15;
 						total -= valDesc;
-						lblVistaDesc.Visible = true;
 						lblValJur.Text = valDesc.ToString("C");
-						lblValTotal.Visible = true;
 						lblVtotal.Text = total.ToString("C");
 					}
 					break;
@@ -484,7 +487,6 @@ namespace LojaCarros
 					{
 						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
 						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
-						lblValTotal.Visible = true;
 						lblVtotal.Text = total.ToString("C");
 						lblValJur.Text = "";
 						lblVistaDesc.Visible = false;
@@ -494,7 +496,6 @@ namespace LojaCarros
 					{
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
 						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
-						lblValTotal.Visible = true;
 						lblVtotal.Text = total.ToString("C");
 						lblParJur.Visible = false;
 						lblVPJ.Text = "";
@@ -504,7 +505,6 @@ namespace LojaCarros
 					{
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
-						lblValTotal.Visible = true;
 						lblVtotal.Text = total.ToString("C");
 						lblParJur.Visible = false;
 						lblVPJ.Text = "";
@@ -514,7 +514,6 @@ namespace LojaCarros
 					{
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
-						lblValTotal.Visible = true;
 						lblVtotal.Text = total.ToString("C");
 						lblParJur.Visible = false;
 						lblVPJ.Text = "";
@@ -545,6 +544,12 @@ namespace LojaCarros
 			double a3UsedTur = 38000;
 			double a3Used = 22000;
 
+			lblValTotal.Visible = true;
+			lblJuros.Visible = false;
+			lblValJur.Text = "";
+
+			lblParJur.Visible = false;
+			lblVPJ.Text = "";
 			double parcelaMensal;
 			double parcelaMensalJuros;
 			double parcelaTotal;
@@ -558,7 +563,8 @@ namespace LojaCarros
 						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
 						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
 						total /= 2;
-						lblVPJ.Text = "2x de " + total.ToString("C");
+
+						lblVtotal.Text = "2x de " + total.ToString("C");
 					}
 
 					if (rdbMar.Checked)
@@ -574,7 +580,7 @@ namespace LojaCarros
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
 						total /= 2;
-						lblVPJ.Text = "2x de " + total.ToString("C");
+						lblVtotal.Text = "2x de " + total.ToString("C");
 					}
 
 					if (rdbA3.Checked)
@@ -582,7 +588,7 @@ namespace LojaCarros
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
 						total /= 2;
-						lblVPJ.Text = "2x de " + total.ToString("C");
+						lblVtotal.Text = "2x de " + total.ToString("C");
 					}
 					break;
 
@@ -592,7 +598,7 @@ namespace LojaCarros
 						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
 						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
 						total /= 3;
-						lblVPJ.Text = "3x de " + total.ToString("C");
+						lblVtotal.Text = "3x de " + total.ToString("C");
 					}
 
 					if (rdbMar.Checked)
@@ -600,7 +606,7 @@ namespace LojaCarros
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
 						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
 						total /= 3;
-						lblVPJ.Text = "3x de " + total.ToString("C");
+						lblVtotal.Text = "3x de " + total.ToString("C");
 					}
 
 					if (rdbG3.Checked)
@@ -608,7 +614,7 @@ namespace LojaCarros
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
 						total /= 3;
-						lblVPJ.Text = "3x de " + total.ToString("C");
+						lblVtotal.Text = "3x de " + total.ToString("C");
 					}
 
 					if (rdbA3.Checked)
@@ -616,7 +622,7 @@ namespace LojaCarros
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
 						total /= 3;
-						lblVPJ.Text = "3x de " + total.ToString("C");
+						lblVtotal.Text = "3x de " + total.ToString("C");
 					}
 					break;
 
@@ -626,7 +632,7 @@ namespace LojaCarros
 						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
 						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
 						total /= 4;
-						lblVPJ.Text = "4x de " + total.ToString("C");
+						lblVtotal.Text = "4x de " + total.ToString("C");
 					}
 
 					if (rdbMar.Checked)
@@ -634,7 +640,7 @@ namespace LojaCarros
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
 						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
 						total /= 4;
-						lblVPJ.Text = "4x de " + total.ToString("C");
+						lblVtotal.Text = "4x de " + total.ToString("C");
 					}
 
 					if (rdbG3.Checked)
@@ -642,7 +648,7 @@ namespace LojaCarros
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
 						total /= 4;
-						lblVPJ.Text = "4x de " + total.ToString("C");
+						lblVtotal.Text = "4x de " + total.ToString("C");
 					}
 
 					if (rdbA3.Checked)
@@ -650,7 +656,7 @@ namespace LojaCarros
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
 						total /= 4;
-						lblVPJ.Text = "4x de " + total.ToString("C");
+						lblVtotal.Text = "4x de " + total.ToString("C");
 					}
 					break;
 
@@ -660,7 +666,7 @@ namespace LojaCarros
 						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
 						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
 						total /= 5;
-						lblVPJ.Text = "5x de " + total.ToString("C");
+						lblVtotal.Text = "5x de " + total.ToString("C");
 					}
 
 					if (rdbMar.Checked)
@@ -668,7 +674,7 @@ namespace LojaCarros
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
 						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
 						total /= 5;
-						lblVPJ.Text = "5x de " + total.ToString("C");
+						lblVtotal.Text = "5x de " + total.ToString("C");
 					}
 
 					if (rdbG3.Checked)
@@ -676,7 +682,7 @@ namespace LojaCarros
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
 						total /= 5;
-						lblVPJ.Text = "5x de " + total.ToString("C");
+						lblVtotal.Text = "5x de " + total.ToString("C");
 					}
 
 					if (rdbA3.Checked)
@@ -684,7 +690,7 @@ namespace LojaCarros
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
 						total /= 5;
-						lblVPJ.Text = "5x de " + total.ToString("C");
+						lblVtotal.Text = "5x de " + total.ToString("C");
 					}
 					break;
 
@@ -694,7 +700,7 @@ namespace LojaCarros
 						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
 						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
 						total /= 6;
-						lblVPJ.Text = "6x de " + total.ToString("C");
+						lblVtotal.Text = "6x de " + total.ToString("C");
 					}
 
 					if (rdbMar.Checked)
@@ -702,7 +708,7 @@ namespace LojaCarros
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
 						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
 						total /= 6;
-						lblVPJ.Text = "6x de " + total.ToString("C");
+						lblVtotal.Text = "6x de " + total.ToString("C");
 					}
 
 					if (rdbG3.Checked)
@@ -710,7 +716,7 @@ namespace LojaCarros
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
 						total /= 6;
-						lblVPJ.Text = "6x de " + total.ToString("C");
+						lblVtotal.Text = "6x de " + total.ToString("C");
 					}
 
 					if (rdbA3.Checked)
@@ -718,7 +724,7 @@ namespace LojaCarros
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
 						total /= 6;
-						lblVPJ.Text = "6x de " + total.ToString("C");
+						lblVtotal.Text = "6x de " + total.ToString("C");
 					}
 					break;
 
@@ -728,7 +734,7 @@ namespace LojaCarros
 						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
 						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
 						total /= 7;
-						lblVPJ.Text = "7x de " + total.ToString("C");
+						lblVtotal.Text = "7x de " + total.ToString("C");
 					}
 
 					if (rdbMar.Checked)
@@ -736,7 +742,7 @@ namespace LojaCarros
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
 						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
 						total /= 7;
-						lblVPJ.Text = "7x de " + total.ToString("C");
+						lblVtotal.Text = "7x de " + total.ToString("C");
 					}
 
 					if (rdbG3.Checked)
@@ -744,7 +750,7 @@ namespace LojaCarros
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
 						total /= 7;
-						lblVPJ.Text = "7x de " + total.ToString("C");
+						lblVtotal.Text = "7x de " + total.ToString("C");
 					}
 
 					if (rdbA3.Checked)
@@ -752,7 +758,7 @@ namespace LojaCarros
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
 						total /= 7;
-						lblVPJ.Text = "7x de " + total.ToString("C");
+						lblVtotal.Text = "7x de " + total.ToString("C");
 					}
 					break;
 
@@ -762,7 +768,7 @@ namespace LojaCarros
 						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
 						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
 						total /= 8;
-						lblVPJ.Text = "8x de " + total.ToString("C");
+						lblVtotal.Text = "8x de " + total.ToString("C");
 					}
 
 					if (rdbMar.Checked)
@@ -770,7 +776,7 @@ namespace LojaCarros
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
 						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
 						total /= 8;
-						lblVPJ.Text = "8x de " + total.ToString("C");
+						lblVtotal.Text = "8x de " + total.ToString("C");
 					}
 
 					if (rdbG3.Checked)
@@ -778,7 +784,7 @@ namespace LojaCarros
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
 						total /= 8;
-						lblVPJ.Text = "8x de " + total.ToString("C");
+						lblVtotal.Text = "8x de " + total.ToString("C");
 					}
 
 					if (rdbA3.Checked)
@@ -786,7 +792,7 @@ namespace LojaCarros
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
 						total /= 8;
-						lblVPJ.Text = "8x de " + total.ToString("C");
+						lblVtotal.Text = "8x de " + total.ToString("C");
 					}
 					break;
 
@@ -796,7 +802,7 @@ namespace LojaCarros
 						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
 						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
 						total /= 9;
-						lblVPJ.Text = "9x de " + total.ToString("C");
+						lblVtotal.Text = "9x de " + total.ToString("C");
 					}
 
 					if (rdbMar.Checked)
@@ -804,7 +810,7 @@ namespace LojaCarros
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
 						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
 						total /= 9;
-						lblVPJ.Text = "9x de " + total.ToString("C");
+						lblVtotal.Text = "9x de " + total.ToString("C");
 					}
 
 					if (rdbG3.Checked)
@@ -812,7 +818,7 @@ namespace LojaCarros
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
 						total /= 9;
-						lblVPJ.Text = "9x de " + total.ToString("C");
+						lblVtotal.Text = "9x de " + total.ToString("C");
 					}
 
 					if (rdbA3.Checked)
@@ -820,7 +826,7 @@ namespace LojaCarros
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
 						total /= 9;
-						lblVPJ.Text = "9x de " + total.ToString("C");
+						lblVtotal.Text = "9x de " + total.ToString("C");
 					}
 					break;
 
@@ -830,7 +836,7 @@ namespace LojaCarros
 						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
 						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
 						total /= 10;
-						lblVPJ.Text = "10x de " + total.ToString("C");
+						lblVtotal.Text = "10x de " + total.ToString("C");
 					}
 
 					if (rdbMar.Checked)
@@ -838,7 +844,7 @@ namespace LojaCarros
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
 						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
 						total /= 10;
-						lblVPJ.Text = "10x de " + total.ToString("C");
+						lblVtotal.Text = "10x de " + total.ToString("C");
 					}
 
 					if (rdbG3.Checked)
@@ -846,7 +852,7 @@ namespace LojaCarros
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
 						total /= 10;
-						lblVPJ.Text = "10x de " + total.ToString("C");
+						lblVtotal.Text = "10x de " + total.ToString("C");
 					}
 
 					if (rdbA3.Checked)
@@ -854,7 +860,7 @@ namespace LojaCarros
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
 						total /= 10;
-						lblVPJ.Text = "10x de " + total.ToString("C");
+						lblVtotal.Text = "10x de " + total.ToString("C");
 					}
 					break;
 
@@ -864,7 +870,7 @@ namespace LojaCarros
 						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
 						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
 						total /= 11;
-						lblVPJ.Text = "11x de " + total.ToString("C");
+						lblVtotal.Text = "11x de " + total.ToString("C");
 					}
 
 					if (rdbMar.Checked)
@@ -872,7 +878,7 @@ namespace LojaCarros
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
 						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
 						total /= 11;
-						lblVPJ.Text = "11x de " + total.ToString("C");
+						lblVtotal.Text = "11x de " + total.ToString("C");
 					}
 
 					if (rdbG3.Checked)
@@ -880,7 +886,7 @@ namespace LojaCarros
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
 						total /= 11;
-						lblVPJ.Text = "11x de " + total.ToString("C");
+						lblVtotal.Text = "11x de " + total.ToString("C");
 					}
 
 					if (rdbA3.Checked)
@@ -888,7 +894,7 @@ namespace LojaCarros
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
 						total /= 11;
-						lblVPJ.Text = "11x de " + total.ToString("C");
+						lblVtotal.Text = "11x de " + total.ToString("C");
 					}
 					break;
 
@@ -898,7 +904,7 @@ namespace LojaCarros
 						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
 						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
 						total /= 12;
-						lblVPJ.Text = "12x de " + total.ToString("C");
+						lblVtotal.Text = "12x de " + total.ToString("C");
 					}
 
 					if (rdbMar.Checked)
@@ -906,7 +912,7 @@ namespace LojaCarros
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
 						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
 						total /= 12;
-						lblVPJ.Text = "12x de " + total.ToString("C");
+						lblVtotal.Text = "12x de " + total.ToString("C");
 					}
 
 					if (rdbG3.Checked)
@@ -914,7 +920,7 @@ namespace LojaCarros
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
 						total /= 12;
-						lblVPJ.Text = "12x de " + total.ToString("C");
+						lblVtotal.Text = "12x de " + total.ToString("C");
 					}
 
 					if (rdbA3.Checked)
@@ -922,7 +928,7 @@ namespace LojaCarros
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
 						total /= 12;
-						lblVPJ.Text = "12x de " + total.ToString("C");
+						lblVtotal.Text = "12x de " + total.ToString("C");
 					}
 					break;
 
@@ -950,6 +956,17 @@ namespace LojaCarros
 					{
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
 						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
+						parcelaMensal = (total / 13);
+						parcelaMensalJuros = parcelaMensal * 0.0485;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 13;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "13x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
 
 					}
 
@@ -957,12 +974,34 @@ namespace LojaCarros
 					{
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
+						parcelaMensal = (total / 13);
+						parcelaMensalJuros = parcelaMensal * 0.0485;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 13;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "13x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
 
 					}
 					if (rdbA3.Checked)
 					{
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
+						parcelaMensal = (total / 13);
+						parcelaMensalJuros = parcelaMensal * 0.0485;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 13;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "13x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
 					}
 					break;
 				case 12:
