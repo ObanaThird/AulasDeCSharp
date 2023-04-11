@@ -298,9 +298,9 @@
 			lblVistaDesc.AutoSize = true;
 			lblVistaDesc.Location = new Point(15, 140);
 			lblVistaDesc.Name = "lblVistaDesc";
-			lblVistaDesc.Size = new Size(102, 15);
+			lblVistaDesc.Size = new Size(105, 15);
 			lblVistaDesc.TabIndex = 14;
-			lblVistaDesc.Text = "Valor do desconto";
+			lblVistaDesc.Text = "Valor do desconto:";
 			lblVistaDesc.Visible = false;
 			// 
 			// lblVtotal
