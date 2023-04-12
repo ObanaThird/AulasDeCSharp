@@ -96,7 +96,7 @@
 			pictureBox3.Image = Properties.Resources.g3;
 			pictureBox3.Location = new Point(446, 28);
 			pictureBox3.Name = "pictureBox3";
-			pictureBox3.Size = new Size(219, 149);
+			pictureBox3.Size = new Size(227, 149);
 			pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
 			pictureBox3.TabIndex = 2;
 			pictureBox3.TabStop = false;
@@ -104,9 +104,9 @@
 			// pictureBox4
 			// 
 			pictureBox4.Image = Properties.Resources.a3;
-			pictureBox4.Location = new Point(671, 28);
+			pictureBox4.Location = new Point(679, 28);
 			pictureBox4.Name = "pictureBox4";
-			pictureBox4.Size = new Size(190, 149);
+			pictureBox4.Size = new Size(182, 149);
 			pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
 			pictureBox4.TabIndex = 3;
 			pictureBox4.TabStop = false;
@@ -227,7 +227,7 @@
 			// rdbCelta
 			// 
 			rdbCelta.AutoSize = true;
-			rdbCelta.Location = new Point(142, 183);
+			rdbCelta.Location = new Point(143, 183);
 			rdbCelta.Name = "rdbCelta";
 			rdbCelta.Size = new Size(52, 19);
 			rdbCelta.TabIndex = 5;
@@ -260,7 +260,7 @@
 			// rdbA3
 			// 
 			rdbA3.AutoSize = true;
-			rdbA3.Location = new Point(744, 183);
+			rdbA3.Location = new Point(757, 183);
 			rdbA3.Name = "rdbA3";
 			rdbA3.Size = new Size(39, 19);
 			rdbA3.TabIndex = 8;
@@ -471,7 +471,7 @@
 			Controls.Add(pictureBox2);
 			Controls.Add(pictureBox1);
 			Name = "Form1";
-			Text = "Form1";
+			Text = "Mercado de carro";
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

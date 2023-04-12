@@ -361,7 +361,7 @@ namespace LojaCarros
 						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
 						valDesc = total * 0.12;
 						total -= valDesc;
-						
+
 						lblValJur.Text = valDesc.ToString("C");
 						lblVtotal.Text = total.ToString("C");
 
@@ -566,7 +566,6 @@ namespace LojaCarros
 
 						lblVtotal.Text = "2x de " + total.ToString("C");
 					}
-
 					if (rdbMar.Checked)
 					{
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
@@ -574,7 +573,6 @@ namespace LojaCarros
 						total /= 2;
 						lblVPJ.Text = "2x de " + total.ToString("C");
 					}
-
 					if (rdbG3.Checked)
 					{
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
@@ -582,7 +580,6 @@ namespace LojaCarros
 						total /= 2;
 						lblVtotal.Text = "2x de " + total.ToString("C");
 					}
-
 					if (rdbA3.Checked)
 					{
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
@@ -600,7 +597,6 @@ namespace LojaCarros
 						total /= 3;
 						lblVtotal.Text = "3x de " + total.ToString("C");
 					}
-
 					if (rdbMar.Checked)
 					{
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
@@ -608,7 +604,6 @@ namespace LojaCarros
 						total /= 3;
 						lblVtotal.Text = "3x de " + total.ToString("C");
 					}
-
 					if (rdbG3.Checked)
 					{
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
@@ -616,7 +611,6 @@ namespace LojaCarros
 						total /= 3;
 						lblVtotal.Text = "3x de " + total.ToString("C");
 					}
-
 					if (rdbA3.Checked)
 					{
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
@@ -634,7 +628,6 @@ namespace LojaCarros
 						total /= 4;
 						lblVtotal.Text = "4x de " + total.ToString("C");
 					}
-
 					if (rdbMar.Checked)
 					{
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
@@ -642,7 +635,6 @@ namespace LojaCarros
 						total /= 4;
 						lblVtotal.Text = "4x de " + total.ToString("C");
 					}
-
 					if (rdbG3.Checked)
 					{
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
@@ -650,7 +642,6 @@ namespace LojaCarros
 						total /= 4;
 						lblVtotal.Text = "4x de " + total.ToString("C");
 					}
-
 					if (rdbA3.Checked)
 					{
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
@@ -668,7 +659,6 @@ namespace LojaCarros
 						total /= 5;
 						lblVtotal.Text = "5x de " + total.ToString("C");
 					}
-
 					if (rdbMar.Checked)
 					{
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
@@ -676,7 +666,6 @@ namespace LojaCarros
 						total /= 5;
 						lblVtotal.Text = "5x de " + total.ToString("C");
 					}
-
 					if (rdbG3.Checked)
 					{
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
@@ -684,7 +673,6 @@ namespace LojaCarros
 						total /= 5;
 						lblVtotal.Text = "5x de " + total.ToString("C");
 					}
-
 					if (rdbA3.Checked)
 					{
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
@@ -702,7 +690,6 @@ namespace LojaCarros
 						total /= 6;
 						lblVtotal.Text = "6x de " + total.ToString("C");
 					}
-
 					if (rdbMar.Checked)
 					{
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
@@ -710,7 +697,6 @@ namespace LojaCarros
 						total /= 6;
 						lblVtotal.Text = "6x de " + total.ToString("C");
 					}
-
 					if (rdbG3.Checked)
 					{
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
@@ -718,7 +704,6 @@ namespace LojaCarros
 						total /= 6;
 						lblVtotal.Text = "6x de " + total.ToString("C");
 					}
-
 					if (rdbA3.Checked)
 					{
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
@@ -736,7 +721,6 @@ namespace LojaCarros
 						total /= 7;
 						lblVtotal.Text = "7x de " + total.ToString("C");
 					}
-
 					if (rdbMar.Checked)
 					{
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
@@ -744,7 +728,6 @@ namespace LojaCarros
 						total /= 7;
 						lblVtotal.Text = "7x de " + total.ToString("C");
 					}
-
 					if (rdbG3.Checked)
 					{
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
@@ -752,7 +735,6 @@ namespace LojaCarros
 						total /= 7;
 						lblVtotal.Text = "7x de " + total.ToString("C");
 					}
-
 					if (rdbA3.Checked)
 					{
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
@@ -770,7 +752,6 @@ namespace LojaCarros
 						total /= 8;
 						lblVtotal.Text = "8x de " + total.ToString("C");
 					}
-
 					if (rdbMar.Checked)
 					{
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
@@ -778,7 +759,6 @@ namespace LojaCarros
 						total /= 8;
 						lblVtotal.Text = "8x de " + total.ToString("C");
 					}
-
 					if (rdbG3.Checked)
 					{
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
@@ -786,7 +766,6 @@ namespace LojaCarros
 						total /= 8;
 						lblVtotal.Text = "8x de " + total.ToString("C");
 					}
-
 					if (rdbA3.Checked)
 					{
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
@@ -804,7 +783,6 @@ namespace LojaCarros
 						total /= 9;
 						lblVtotal.Text = "9x de " + total.ToString("C");
 					}
-
 					if (rdbMar.Checked)
 					{
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
@@ -812,7 +790,6 @@ namespace LojaCarros
 						total /= 9;
 						lblVtotal.Text = "9x de " + total.ToString("C");
 					}
-
 					if (rdbG3.Checked)
 					{
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
@@ -820,7 +797,6 @@ namespace LojaCarros
 						total /= 9;
 						lblVtotal.Text = "9x de " + total.ToString("C");
 					}
-
 					if (rdbA3.Checked)
 					{
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
@@ -838,7 +814,6 @@ namespace LojaCarros
 						total /= 10;
 						lblVtotal.Text = "10x de " + total.ToString("C");
 					}
-
 					if (rdbMar.Checked)
 					{
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
@@ -846,7 +821,6 @@ namespace LojaCarros
 						total /= 10;
 						lblVtotal.Text = "10x de " + total.ToString("C");
 					}
-
 					if (rdbG3.Checked)
 					{
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
@@ -854,7 +828,6 @@ namespace LojaCarros
 						total /= 10;
 						lblVtotal.Text = "10x de " + total.ToString("C");
 					}
-
 					if (rdbA3.Checked)
 					{
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
@@ -872,7 +845,6 @@ namespace LojaCarros
 						total /= 11;
 						lblVtotal.Text = "11x de " + total.ToString("C");
 					}
-
 					if (rdbMar.Checked)
 					{
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
@@ -880,7 +852,6 @@ namespace LojaCarros
 						total /= 11;
 						lblVtotal.Text = "11x de " + total.ToString("C");
 					}
-
 					if (rdbG3.Checked)
 					{
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
@@ -888,7 +859,6 @@ namespace LojaCarros
 						total /= 11;
 						lblVtotal.Text = "11x de " + total.ToString("C");
 					}
-
 					if (rdbA3.Checked)
 					{
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
@@ -906,7 +876,6 @@ namespace LojaCarros
 						total /= 12;
 						lblVtotal.Text = "12x de " + total.ToString("C");
 					}
-
 					if (rdbMar.Checked)
 					{
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
@@ -914,7 +883,6 @@ namespace LojaCarros
 						total /= 12;
 						lblVtotal.Text = "12x de " + total.ToString("C");
 					}
-
 					if (rdbG3.Checked)
 					{
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
@@ -922,7 +890,6 @@ namespace LojaCarros
 						total /= 12;
 						lblVtotal.Text = "12x de " + total.ToString("C");
 					}
-
 					if (rdbA3.Checked)
 					{
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
@@ -933,13 +900,12 @@ namespace LojaCarros
 					break;
 
 				case 11:
-
 					if (rdbCelta.Checked)
 					{
 						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
 						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
 						parcelaMensal = (total / 13);
-						parcelaMensalJuros = parcelaMensal * 0.0485;
+						parcelaMensalJuros = parcelaMensal * 0.0290;
 						parcelaTotal = parcelaMensal + parcelaMensalJuros;
 						total = parcelaTotal * 13;
 						lblParJur.Visible = true;
@@ -949,15 +915,13 @@ namespace LojaCarros
 						lblValTotal.Visible = true;
 						lblVtotal.Text = total.ToString("C");
 						lblVistaDesc.Visible = false;
-
 					}
-
 					if (rdbMar.Checked)
 					{
 						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
 						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
 						parcelaMensal = (total / 13);
-						parcelaMensalJuros = parcelaMensal * 0.0485;
+						parcelaMensalJuros = parcelaMensal * 0.0290;
 						parcelaTotal = parcelaMensal + parcelaMensalJuros;
 						total = parcelaTotal * 13;
 						lblParJur.Visible = true;
@@ -967,15 +931,13 @@ namespace LojaCarros
 						lblValTotal.Visible = true;
 						lblVtotal.Text = total.ToString("C");
 						lblVistaDesc.Visible = false;
-
 					}
-
 					if (rdbG3.Checked)
 					{
 						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
 						parcelaMensal = (total / 13);
-						parcelaMensalJuros = parcelaMensal * 0.0485;
+						parcelaMensalJuros = parcelaMensal * 0.0290;
 						parcelaTotal = parcelaMensal + parcelaMensalJuros;
 						total = parcelaTotal * 13;
 						lblParJur.Visible = true;
@@ -992,7 +954,7 @@ namespace LojaCarros
 						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
 						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
 						parcelaMensal = (total / 13);
-						parcelaMensalJuros = parcelaMensal * 0.0485;
+						parcelaMensalJuros = parcelaMensal * 0.0290;
 						parcelaTotal = parcelaMensal + parcelaMensalJuros;
 						total = parcelaTotal * 13;
 						lblParJur.Visible = true;
@@ -1005,9 +967,749 @@ namespace LojaCarros
 					}
 					break;
 				case 12:
-
+					if (rdbCelta.Checked)
+					{
+						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
+						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
+						parcelaMensal = (total / 14);
+						parcelaMensalJuros = parcelaMensal * 0.0292;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 14;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "14x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					if (rdbMar.Checked)
+					{
+						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
+						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
+						parcelaMensal = (total / 14);
+						parcelaMensalJuros = parcelaMensal * 0.0292;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 14;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "14x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					if (rdbG3.Checked)
+					{
+						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
+						parcelaMensal = (total / 14);
+						parcelaMensalJuros = parcelaMensal * 0.0292;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 14;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "14x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					if (rdbA3.Checked)
+					{
+						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
+						parcelaMensal = (total / 14);
+						parcelaMensalJuros = parcelaMensal * 0.0292;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 14;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "14x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
 					break;
+				case 13:
+					if (rdbCelta.Checked)
+					{
+						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
+						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
+						parcelaMensal = (total / 15);
+						parcelaMensalJuros = parcelaMensal * 0.0298;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 15;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "15x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					if (rdbMar.Checked)
+					{
+						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
+						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
+						parcelaMensal = (total / 15);
+						parcelaMensalJuros = parcelaMensal * 0.0298;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 15;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "15x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					if (rdbG3.Checked)
+					{
+						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
+						parcelaMensal = (total / 15);
+						parcelaMensalJuros = parcelaMensal * 0.0298;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 15;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "15x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					if (rdbA3.Checked)
+					{
+						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
+						parcelaMensal = (total / 15);
+						parcelaMensalJuros = parcelaMensal * 0.0298;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 15;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "15x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					break;
+				case 14:
+					if (rdbCelta.Checked)
+					{
+						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
+						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
+						parcelaMensal = (total / 16);
+						parcelaMensalJuros = parcelaMensal * 0.0302;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 16;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "16x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					if (rdbMar.Checked)
+					{
+						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
+						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
+						parcelaMensal = (total / 16);
+						parcelaMensalJuros = parcelaMensal * 0.0302;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 16;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "16x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					if (rdbG3.Checked)
+					{
+						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
+						parcelaMensal = (total / 16);
+						parcelaMensalJuros = parcelaMensal * 0.0302;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 16;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "16x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					if (rdbA3.Checked)
+					{
+						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
+						parcelaMensal = (total / 16);
+						parcelaMensalJuros = parcelaMensal * 0.0302;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 16;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "16x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					break;
+				case 15:
+					if (rdbCelta.Checked)
+					{
+						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
+						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
+						parcelaMensal = (total / 17);
+						parcelaMensalJuros = parcelaMensal * 0.0320;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 17;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "17x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					if (rdbMar.Checked)
+					{
+						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
+						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
+						parcelaMensal = (total / 17);
+						parcelaMensalJuros = parcelaMensal * 0.0320;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 17;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "17x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
 
+					if (rdbG3.Checked)
+					{
+						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
+						parcelaMensal = (total / 17);
+						parcelaMensalJuros = parcelaMensal * 0.0320;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 17;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "17x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					if (rdbA3.Checked)
+					{
+						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
+						parcelaMensal = (total / 17);
+						parcelaMensalJuros = parcelaMensal * 0.0320;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 17;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "17x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					break;
+				case 16:
+					if (rdbCelta.Checked)
+					{
+						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
+						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
+						parcelaMensal = (total / 18);
+						parcelaMensalJuros = parcelaMensal * 0.0325;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 18;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "18x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+
+					if (rdbMar.Checked)
+					{
+						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
+						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
+						parcelaMensal = (total / 18);
+						parcelaMensalJuros = parcelaMensal * 0.0325;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 18;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "18x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+
+					if (rdbG3.Checked)
+					{
+						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
+						parcelaMensal = (total / 18);
+						parcelaMensalJuros = parcelaMensal * 0.0325;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 18;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "18x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					if (rdbA3.Checked)
+					{
+						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
+						parcelaMensal = (total / 18);
+						parcelaMensalJuros = parcelaMensal * 0.0325;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 18;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "18x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					break;
+				case 17:
+					if (rdbCelta.Checked)
+					{
+						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
+						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
+						parcelaMensal = (total / 19);
+						parcelaMensalJuros = parcelaMensal * 0.0333;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 19;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "19x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+
+					if (rdbMar.Checked)
+					{
+						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
+						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
+						parcelaMensal = (total / 19);
+						parcelaMensalJuros = parcelaMensal * 0.0333;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 19;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "19x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+
+					if (rdbG3.Checked)
+					{
+						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
+						parcelaMensal = (total / 19);
+						parcelaMensalJuros = parcelaMensal * 0.0333;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 19;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "19x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					if (rdbA3.Checked)
+					{
+						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
+						parcelaMensal = (total / 19);
+						parcelaMensalJuros = parcelaMensal * 0.0333;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 19;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "19x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					break;
+				case 18:
+					if (rdbCelta.Checked)
+					{
+						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
+						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
+						parcelaMensal = (total / 20);
+						parcelaMensalJuros = parcelaMensal * 0.0372;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 20;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "20x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+
+					if (rdbMar.Checked)
+					{
+						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
+						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
+						parcelaMensal = (total / 20);
+						parcelaMensalJuros = parcelaMensal * 0.0372;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 20;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "20x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+
+					if (rdbG3.Checked)
+					{
+						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
+						parcelaMensal = (total / 20);
+						parcelaMensalJuros = parcelaMensal * 0.0372;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 20;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "20x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+
+					}
+					if (rdbA3.Checked)
+					{
+						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
+						parcelaMensal = (total / 20);
+						parcelaMensalJuros = parcelaMensal * 0.0372;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 20;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "20x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					break;
+				case 19:
+					if (rdbCelta.Checked)
+					{
+						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
+						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
+						parcelaMensal = (total / 21);
+						parcelaMensalJuros = parcelaMensal * 0.0382;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 21;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "21x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+
+					if (rdbMar.Checked)
+					{
+						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
+						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
+						parcelaMensal = (total / 21);
+						parcelaMensalJuros = parcelaMensal * 0.0382;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 21;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "21x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+
+					if (rdbG3.Checked)
+					{
+						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
+						parcelaMensal = (total / 21);
+						parcelaMensalJuros = parcelaMensal * 0.0382;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 21;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "21x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					if (rdbA3.Checked)
+					{
+						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
+						parcelaMensal = (total / 21);
+						parcelaMensalJuros = parcelaMensal * 0.0382;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 21;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "21x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					break;
+				case 20:
+					if (rdbCelta.Checked)
+					{
+						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
+						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
+						parcelaMensal = (total / 22);
+						parcelaMensalJuros = parcelaMensal * 0.0400;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 22;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "22x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+
+					if (rdbMar.Checked)
+					{
+						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
+						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
+						parcelaMensal = (total / 22);
+						parcelaMensalJuros = parcelaMensal * 0.0400;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 22;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "22x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+
+					if (rdbG3.Checked)
+					{
+						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
+						parcelaMensal = (total / 22);
+						parcelaMensalJuros = parcelaMensal * 0.0400;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 22;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "22x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+
+					}
+					if (rdbA3.Checked)
+					{
+						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
+						parcelaMensal = (total / 22);
+						parcelaMensalJuros = parcelaMensal * 0.0400;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 22;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "22x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					break;
+				case 21:
+					if (rdbCelta.Checked)
+					{
+						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
+						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
+						parcelaMensal = (total / 23);
+						parcelaMensalJuros = parcelaMensal * 0.0424;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 23;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "23x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+
+					if (rdbMar.Checked)
+					{
+						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
+						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
+						parcelaMensal = (total / 23);
+						parcelaMensalJuros = parcelaMensal * 0.0424;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 23;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "23x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+
+					if (rdbG3.Checked)
+					{
+						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
+						parcelaMensal = (total / 23);
+						parcelaMensalJuros = parcelaMensal * 0.0424;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 23;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "23x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+
+					}
+					if (rdbA3.Checked)
+					{
+						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
+						parcelaMensal = (total / 23);
+						parcelaMensalJuros = parcelaMensal * 0.0424;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 23;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "23x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					break;
+				case 22:
+					if (rdbCelta.Checked)
+					{
+						double estadoCelta = rdbSemi.Checked ? celtaSemi : celtaUsed;
+						total = txtPlaca.Text != "" ? placa + estadoCelta : estadoCelta;
+						parcelaMensal = (total / 24);
+						parcelaMensalJuros = parcelaMensal * 0.0485;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 24;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "24x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+
+					if (rdbMar.Checked)
+					{
+						double estadoMar = rdbSemi.Checked ? (cbTurbo.Checked ? marSemTurbo : marSemi) : marUsed;
+						total = txtPlaca.Text != "" ? placa + estadoMar : estadoMar;
+						parcelaMensal = (total / 24);
+						parcelaMensalJuros = parcelaMensal * 0.0485;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 24;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "24x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+
+					if (rdbG3.Checked)
+					{
+						double estadoG3 = rdbNovo.Checked ? (cbTurbo.Checked ? g3NovoTur : g3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? g3SemiTur : g3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? g3UsedTur : g3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoG3 : estadoG3;
+						parcelaMensal = (total / 24);
+						parcelaMensalJuros = parcelaMensal * 0.0485;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 24;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "24x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					if (rdbA3.Checked)
+					{
+						double estadoA3 = rdbNovo.Checked ? (cbTurbo.Checked ? a3NovoTur : a3Novo) : rdbSemi.Checked ? (cbTurbo.Checked ? a3SemiTur : a3Semi) : rdbUsed.Checked ? (cbTurbo.Checked ? a3UsedTur : a3Used) : 0;
+						total = txtPlaca.Text != "" ? placa + estadoA3 : estadoA3;
+						parcelaMensal = (total / 24);
+						parcelaMensalJuros = parcelaMensal * 0.0485;
+						parcelaTotal = parcelaMensal + parcelaMensalJuros;
+						total = parcelaTotal * 24;
+						lblParJur.Visible = true;
+						lblVPJ.Text = "24x de " + parcelaTotal.ToString("C");
+						lblJuros.Visible = true;
+						lblValJur.Text = parcelaMensalJuros.ToString("C") + " ao mês.";
+						lblValTotal.Visible = true;
+						lblVtotal.Text = total.ToString("C");
+						lblVistaDesc.Visible = false;
+					}
+					break;
 			}
 		}
 	}
